@@ -14,14 +14,6 @@ Naming/PredicateName:
 Style/FrozenStringLiteralComment:
   EnforcedStyle: always
 
-Style/FormatStringToken:
-  # Because we parse a lot of source codes from strings. Percent arrays
-  # look like unannotated format string tokens to this cop.
-  Exclude:
-    - spec/**/*
-
-Style/IpAddresses:
-  # The test for this cop includes strings that would cause offenses
 Layout/EndOfLine:
   EnforcedStyle: lf
 
@@ -47,15 +39,7 @@ Layout/IndentHeredoc:
 # Trailing white space is meaningful in code examples
 Layout/TrailingWhitespace:
   AllowInHeredoc: true
-
-Lint/AmbiguousBlockAssociation:
-  Exclude:
-    - 'spec/**/*.rb'
-
-Lint/InterpolationCheck:
-  Exclude:
-    - 'spec/**/*.rb'
-
+  
 Lint/UselessAccessModifier:
   MethodCreatingMethods:
     - 'def_matcher'
@@ -63,16 +47,3 @@ Lint/UselessAccessModifier:
 
 Lint/BooleanSymbol:
   Enabled: false
-
-Metrics/BlockLength:
-
-Metrics/ModuleLength:
-
-Performance/Caller:
-
-RSpec/PredicateMatcher:
-  EnforcedStyle: explicit
-
-RSpec/NestedGroups:
-  Max: 7
-
