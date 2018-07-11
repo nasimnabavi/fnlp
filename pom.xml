@@ -86,6 +86,19 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			<plugin>
+               			<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<configuration>
+					<targetDirectory>target/pmd</targetDirectory>
+					<rulesets>
+						<ruleset>java-typeresolution</ruleset>
+						<ruleset>/rulesets/java/naming.xml</ruleset>
+						<ruleset>d:\rulesets\strings.xml</ruleset>
+						<ruleset>http://localhost/design.xml</ruleset>
+					</rulesets>
+				</configuration>
+            		</plugin>
 		</plugins>
 	</build>
 
